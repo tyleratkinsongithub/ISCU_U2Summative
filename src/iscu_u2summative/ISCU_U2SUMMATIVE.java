@@ -29,8 +29,8 @@ public class ISCU_U2SUMMATIVE {
            String newLetter;
                    
                    //loop program for user conveneance
-                   while (choice !=6) {
-                    System.out.println  ("Would you like to:\n\n1: Find the area of a Triangle\n2: Find the circumference of a circle\n3: Find the Surface area of a sphere\n4: Find the SIN of a angle\n5: Find the area of a rectangle\n6: Exit");
+                   while (choice !=7) {
+                    System.out.println  ("Would you like to:\n\n1: Find the area of a Triangle\n2: Find the circumference of a circle\n3: Find the Surface area of a sphere\n4: Find the SIN of a angle\n5: Find the area of a rectangle\n6: Add the sumer of 5 numbers\n7: Exit");
                    
                     choice = keyedinput.nextInt();
                    switch(choice){
@@ -65,7 +65,23 @@ public class ISCU_U2SUMMATIVE {
                         double width = keyedinput.nextDouble();
                         PeramaterOfARectangle(length, width);
                         break;
-                         case 6:
+                    case 6:
+                        double [ ] numbers = new double [5];
+                        System.out.println("Enter 5 numbers youd like to add together");
+                        numbers[0] = keyedinput.nextDouble();
+                        numbers[1] = keyedinput.nextDouble();
+                        numbers[2] = keyedinput.nextDouble();
+                        numbers[3] = keyedinput.nextDouble();
+                        numbers[4] = keyedinput.nextDouble();
+                        double sum;
+                        sum = numbers [1] + numbers [2]  + numbers [3]  + numbers [0] +numbers[4];
+                        System.out.println("The total is" + sum +".");
+                                
+                            
+                       
+                       
+                        break;
+                    case 7:
                     System.out.println("Exiting.");
                     break;
                         
@@ -118,9 +134,6 @@ public class ISCU_U2SUMMATIVE {
         area = Math.round(area*100);
         area = 100;
         System.out.println("The area is " + area + "Units.");
-    
-           
-           
-    }
-    
-}
+    }}
+ 
+
